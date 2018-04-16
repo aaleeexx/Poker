@@ -1,4 +1,3 @@
-
 package poker;
 
 /**
@@ -7,10 +6,8 @@ package poker;
  * @author Torricelli (il main di prova)
  */
 public enum Seme {
-    FIORI("♣"),QUADRI("♦"),CUORI("♥"),PICCHE("♠");
-    
+    FIORI("♣"), QUADRI("♦"), CUORI("♥"), PICCHE("♠");
     public final String simbolo;
-    
 
     Seme(String s){
         simbolo=s;
@@ -23,12 +20,11 @@ public enum Seme {
  */
     @Override
     public String toString() {
-    return simbolo;}
+        return simbolo;
+    }
 
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
         for (Seme i:Seme.values())
             System.out.println(i.name() + ": " + i + " Ordinale: "+i.ordinal());
     }
-    
 }
